@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+const app = require("../dist/src/app");
+
+const port = 3080;
+
+app.listen(port, () => console.log(`listening on port ${port}`));
