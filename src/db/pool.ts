@@ -1,9 +1,7 @@
-import { Client } from "pg";
+import { Pool } from "pg";
 import env from "../../env";
 
-const dbConfig = {
-  connectionString: env.database_url,
-};
-const pool = new Client(dbConfig);
+const dbConfig = { connectionString: env.database_url };
+const pool = new Pool(dbConfig);
 
 export default pool;
